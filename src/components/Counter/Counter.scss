@@ -1,0 +1,93 @@
+.Counter {
+  border: 1px solid #eee;
+  padding: 1rem;
+  font-size: 2rem;
+  display: flex;
+
+  &__set-btn {
+    font-size: 2rem;
+    background: #444;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: 1px solid #eee;
+    cursor: pointer;
+    span {
+      margin-top: -3px;
+    }
+
+    &:active {
+      background: #333;
+      border-color: lime;
+    }
+  }
+
+  &__number {
+    width: 180px;
+    background: black;
+    color: lime;
+    border: 3px inset #ccc;
+    margin: 0 0.5rem;
+    text-align: right;
+  }
+
+  &__action-btns {
+    margin-left: auto;
+
+    .vertical-dots-btn {
+      font-weight: bold;
+      font-size: 1.8rem;
+      width: 30px;
+      height: 40px;
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      outline: none;
+      color: #888;
+      position: relative;
+
+      span {
+        -webkit-text-stroke: 1px #888;
+      }
+
+      &:focus {
+        color: black;
+
+        span {
+          -webkit-text-stroke: 1px #000;
+        }
+
+        ul {
+          visibility: visible;
+        }
+      }
+
+      ul {
+        visibility: hidden;
+        z-index: 10;
+        position: absolute;
+        top: 40px;
+        right: -17px;
+        background: white;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        width: 200px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        li {
+          padding: 1rem;
+          text-align: left;
+          &:hover {
+            background: #fafafa;
+          }
+        }
+      }
+    }
+  }
+}

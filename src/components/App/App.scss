@@ -1,0 +1,29 @@
+.App {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 1rem;
+
+  &__header {
+    display: flex;
+    h1 {
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  &__add-counter-btn {
+    margin-left: auto;
+    height: 40px;
+    background: rgb(128, 201, 10);
+    color: white;
+    outline: none;
+    border: 0;
+    font-size: 1rem;
+    padding: 0 0.8rem;
+    cursor: pointer;
+    &:active {
+      background: rgb(110, 173, 8);
+    }
+  }
+}
